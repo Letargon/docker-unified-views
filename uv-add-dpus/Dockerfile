@@ -3,7 +3,7 @@ FROM alpine:3.3
 MAINTAINER Niels Vandekeybus <niels.vandekeybus@tenforce.com>
 ADD dpus /dpus
 VOLUME /dpus
-ENV MASTER_USER=master MASTER_PASSWORD=commander FRONTEND=frontend FRONTENDPORT=8080
+ENV MASTER_USER=master MASTER_PASSWORD=commander FRONTEND=frontend FRONTENDPORT=8088
 
 RUN apk add --no-cache bash curl
 RUN mkdir -p /var/log/adddpus
